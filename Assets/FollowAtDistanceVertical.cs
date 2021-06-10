@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// Object 1 ("Director") is directly picked up and manipulated by player.
+// Object 2 ("Follower") follows the motion of Director, with a spatial offset.
+// Follower motion constrained to vertical y dimension only. 
+// Useful tool for more advanced game mechanics and getting around the "isKinematic = true" issue for picked up objects. 
 public class FollowAtDistanceVertical : MonoBehaviour
 {
     public GameObject director;

@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// Constrains the movement of the "director" object to be within a bounding cube. 
+// In scene, bounding cube is visible and semi-transparent.
+// Haptic controller buzz when player attempts to move the "director" outside of the bounding cube.
 public class BoundingBox : MonoBehaviour
 {
     public float lowerX;
